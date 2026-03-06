@@ -25,9 +25,16 @@ if (missingEnvVars.length > 0) {
 
 const app = express();
 
-app.use(cors({
-  origin: "https://insightboard-frontend-tawny.vercel.app"
-}));
+app.use(
+  cors({
+    origin: [
+      "http://localhost:3000",
+      "https://insightboard-frontend-tawny.vercel.app"
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true
+  })
+);
 app.use(express.json());
 
 connectDB();
