@@ -26,7 +26,7 @@ if (missingEnvVars.length > 0) {
 const app = express();
 
 app.use(cors({
-  origin: "https://insightboard-backend-ec6p.onrender.com"
+  origin: "https://insightboard-frontend-tawny.vercel.app"
 }));
 app.use(express.json());
 
