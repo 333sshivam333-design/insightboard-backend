@@ -26,7 +26,7 @@ if (missingEnvVars.length > 0) {
 const app = express();
 
 app.use(cors({
-  origin: "http://localhost:3000"
+  origin: "https://insightboard-backend-ec6p.onrender.com"
 }));
 app.use(express.json());
 
